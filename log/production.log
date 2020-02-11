@@ -1,0 +1,561 @@
+I, [2020-02-10T17:21:56.233089 #18446]  INFO -- : [283a7cf2-9095-447c-b9da-ad8fcb37ce56] Started GET "/" for 127.0.0.1 at 2020-02-10 17:21:56 -0800
+F, [2020-02-10T17:21:56.233692 #18446] FATAL -- : [283a7cf2-9095-447c-b9da-ad8fcb37ce56]   
+F, [2020-02-10T17:21:56.233737 #18446] FATAL -- : [283a7cf2-9095-447c-b9da-ad8fcb37ce56] ActionController::RoutingError (No route matches [GET] "/"):
+F, [2020-02-10T17:21:56.233769 #18446] FATAL -- : [283a7cf2-9095-447c-b9da-ad8fcb37ce56]   
+F, [2020-02-10T17:21:56.233809 #18446] FATAL -- : [283a7cf2-9095-447c-b9da-ad8fcb37ce56] actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[283a7cf2-9095-447c-b9da-ad8fcb37ce56] actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[283a7cf2-9095-447c-b9da-ad8fcb37ce56] railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+[283a7cf2-9095-447c-b9da-ad8fcb37ce56] railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+[283a7cf2-9095-447c-b9da-ad8fcb37ce56] activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[283a7cf2-9095-447c-b9da-ad8fcb37ce56] activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[283a7cf2-9095-447c-b9da-ad8fcb37ce56] activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[283a7cf2-9095-447c-b9da-ad8fcb37ce56] railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+[283a7cf2-9095-447c-b9da-ad8fcb37ce56] actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[283a7cf2-9095-447c-b9da-ad8fcb37ce56] actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[283a7cf2-9095-447c-b9da-ad8fcb37ce56] rack (2.2.1) lib/rack/runtime.rb:22:in `call'
+[283a7cf2-9095-447c-b9da-ad8fcb37ce56] activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[283a7cf2-9095-447c-b9da-ad8fcb37ce56] actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[283a7cf2-9095-447c-b9da-ad8fcb37ce56] rack (2.2.1) lib/rack/sendfile.rb:110:in `call'
+[283a7cf2-9095-447c-b9da-ad8fcb37ce56] rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+[283a7cf2-9095-447c-b9da-ad8fcb37ce56] railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+[283a7cf2-9095-447c-b9da-ad8fcb37ce56] puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+[283a7cf2-9095-447c-b9da-ad8fcb37ce56] puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+[283a7cf2-9095-447c-b9da-ad8fcb37ce56] puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+[283a7cf2-9095-447c-b9da-ad8fcb37ce56] puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+[283a7cf2-9095-447c-b9da-ad8fcb37ce56] puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2020-02-10T17:21:57.979068 #18446]  INFO -- : [fbf5a6c8-8f0d-4194-90aa-49a92bf7723d] Started GET "/" for 127.0.0.1 at 2020-02-10 17:21:57 -0800
+F, [2020-02-10T17:21:57.979622 #18446] FATAL -- : [fbf5a6c8-8f0d-4194-90aa-49a92bf7723d]   
+F, [2020-02-10T17:21:57.979671 #18446] FATAL -- : [fbf5a6c8-8f0d-4194-90aa-49a92bf7723d] ActionController::RoutingError (No route matches [GET] "/"):
+F, [2020-02-10T17:21:57.979711 #18446] FATAL -- : [fbf5a6c8-8f0d-4194-90aa-49a92bf7723d]   
+F, [2020-02-10T17:21:57.979754 #18446] FATAL -- : [fbf5a6c8-8f0d-4194-90aa-49a92bf7723d] actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[fbf5a6c8-8f0d-4194-90aa-49a92bf7723d] actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[fbf5a6c8-8f0d-4194-90aa-49a92bf7723d] railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+[fbf5a6c8-8f0d-4194-90aa-49a92bf7723d] railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+[fbf5a6c8-8f0d-4194-90aa-49a92bf7723d] activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[fbf5a6c8-8f0d-4194-90aa-49a92bf7723d] activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[fbf5a6c8-8f0d-4194-90aa-49a92bf7723d] activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[fbf5a6c8-8f0d-4194-90aa-49a92bf7723d] railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+[fbf5a6c8-8f0d-4194-90aa-49a92bf7723d] actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[fbf5a6c8-8f0d-4194-90aa-49a92bf7723d] actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[fbf5a6c8-8f0d-4194-90aa-49a92bf7723d] rack (2.2.1) lib/rack/runtime.rb:22:in `call'
+[fbf5a6c8-8f0d-4194-90aa-49a92bf7723d] activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[fbf5a6c8-8f0d-4194-90aa-49a92bf7723d] actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[fbf5a6c8-8f0d-4194-90aa-49a92bf7723d] rack (2.2.1) lib/rack/sendfile.rb:110:in `call'
+[fbf5a6c8-8f0d-4194-90aa-49a92bf7723d] rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+[fbf5a6c8-8f0d-4194-90aa-49a92bf7723d] railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+[fbf5a6c8-8f0d-4194-90aa-49a92bf7723d] puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+[fbf5a6c8-8f0d-4194-90aa-49a92bf7723d] puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+[fbf5a6c8-8f0d-4194-90aa-49a92bf7723d] puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+[fbf5a6c8-8f0d-4194-90aa-49a92bf7723d] puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+[fbf5a6c8-8f0d-4194-90aa-49a92bf7723d] puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2020-02-10T17:22:04.601867 #18446]  INFO -- : [3d1b77d0-13ef-4fff-b3e8-f739b36ceeb9] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:04 -0800
+I, [2020-02-10T17:22:04.602482 #18446]  INFO -- : [3d1b77d0-13ef-4fff-b3e8-f739b36ceeb9] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:04.605426 #18446]  INFO -- : [3d1b77d0-13ef-4fff-b3e8-f739b36ceeb9] Completed 500 Internal Server Error in 3ms
+F, [2020-02-10T17:22:04.607794 #18446] FATAL -- : [3d1b77d0-13ef-4fff-b3e8-f739b36ceeb9]   
+F, [2020-02-10T17:22:04.607900 #18446] FATAL -- : [3d1b77d0-13ef-4fff-b3e8-f739b36ceeb9] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:04.607925 #18446] FATAL -- : [3d1b77d0-13ef-4fff-b3e8-f739b36ceeb9]   
+F, [2020-02-10T17:22:04.607953 #18446] FATAL -- : [3d1b77d0-13ef-4fff-b3e8-f739b36ceeb9] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[3d1b77d0-13ef-4fff-b3e8-f739b36ceeb9] app/commands/authorize_api_request.rb:17:in `user'
+[3d1b77d0-13ef-4fff-b3e8-f739b36ceeb9] app/commands/authorize_api_request.rb:9:in `call'
+[3d1b77d0-13ef-4fff-b3e8-f739b36ceeb9] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:10.008733 #18446]  INFO -- : [f88798ce-10d3-4390-9b44-57885285b297] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:10 -0800
+I, [2020-02-10T17:22:10.009478 #18446]  INFO -- : [f88798ce-10d3-4390-9b44-57885285b297] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:10.014880 #18446]  INFO -- : [f88798ce-10d3-4390-9b44-57885285b297] Completed 500 Internal Server Error in 5ms
+F, [2020-02-10T17:22:10.015369 #18446] FATAL -- : [f88798ce-10d3-4390-9b44-57885285b297]   
+F, [2020-02-10T17:22:10.015434 #18446] FATAL -- : [f88798ce-10d3-4390-9b44-57885285b297] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:10.015459 #18446] FATAL -- : [f88798ce-10d3-4390-9b44-57885285b297]   
+F, [2020-02-10T17:22:10.015485 #18446] FATAL -- : [f88798ce-10d3-4390-9b44-57885285b297] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[f88798ce-10d3-4390-9b44-57885285b297] app/commands/authorize_api_request.rb:17:in `user'
+[f88798ce-10d3-4390-9b44-57885285b297] app/commands/authorize_api_request.rb:9:in `call'
+[f88798ce-10d3-4390-9b44-57885285b297] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:10.632723 #18446]  INFO -- : [37f93a3e-68da-4f03-b088-5e04050c1782] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:10 -0800
+I, [2020-02-10T17:22:10.633444 #18446]  INFO -- : [37f93a3e-68da-4f03-b088-5e04050c1782] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:10.639443 #18446]  INFO -- : [37f93a3e-68da-4f03-b088-5e04050c1782] Completed 500 Internal Server Error in 6ms
+F, [2020-02-10T17:22:10.640169 #18446] FATAL -- : [37f93a3e-68da-4f03-b088-5e04050c1782]   
+F, [2020-02-10T17:22:10.640280 #18446] FATAL -- : [37f93a3e-68da-4f03-b088-5e04050c1782] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:10.640320 #18446] FATAL -- : [37f93a3e-68da-4f03-b088-5e04050c1782]   
+F, [2020-02-10T17:22:10.640379 #18446] FATAL -- : [37f93a3e-68da-4f03-b088-5e04050c1782] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[37f93a3e-68da-4f03-b088-5e04050c1782] app/commands/authorize_api_request.rb:17:in `user'
+[37f93a3e-68da-4f03-b088-5e04050c1782] app/commands/authorize_api_request.rb:9:in `call'
+[37f93a3e-68da-4f03-b088-5e04050c1782] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:10.831891 #18446]  INFO -- : [674e1248-4009-4856-988f-ed7b74320e1d] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:10 -0800
+I, [2020-02-10T17:22:10.832585 #18446]  INFO -- : [674e1248-4009-4856-988f-ed7b74320e1d] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:10.837941 #18446]  INFO -- : [674e1248-4009-4856-988f-ed7b74320e1d] Completed 500 Internal Server Error in 5ms
+F, [2020-02-10T17:22:10.838933 #18446] FATAL -- : [674e1248-4009-4856-988f-ed7b74320e1d]   
+F, [2020-02-10T17:22:10.839015 #18446] FATAL -- : [674e1248-4009-4856-988f-ed7b74320e1d] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:10.839058 #18446] FATAL -- : [674e1248-4009-4856-988f-ed7b74320e1d]   
+F, [2020-02-10T17:22:10.839131 #18446] FATAL -- : [674e1248-4009-4856-988f-ed7b74320e1d] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[674e1248-4009-4856-988f-ed7b74320e1d] app/commands/authorize_api_request.rb:17:in `user'
+[674e1248-4009-4856-988f-ed7b74320e1d] app/commands/authorize_api_request.rb:9:in `call'
+[674e1248-4009-4856-988f-ed7b74320e1d] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:11.031643 #18446]  INFO -- : [abd08e0f-9baa-41f6-91fa-adf1dac41c14] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:11 -0800
+I, [2020-02-10T17:22:11.032210 #18446]  INFO -- : [abd08e0f-9baa-41f6-91fa-adf1dac41c14] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:11.036998 #18446]  INFO -- : [abd08e0f-9baa-41f6-91fa-adf1dac41c14] Completed 500 Internal Server Error in 5ms
+F, [2020-02-10T17:22:11.037629 #18446] FATAL -- : [abd08e0f-9baa-41f6-91fa-adf1dac41c14]   
+F, [2020-02-10T17:22:11.037698 #18446] FATAL -- : [abd08e0f-9baa-41f6-91fa-adf1dac41c14] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:11.037737 #18446] FATAL -- : [abd08e0f-9baa-41f6-91fa-adf1dac41c14]   
+F, [2020-02-10T17:22:11.037779 #18446] FATAL -- : [abd08e0f-9baa-41f6-91fa-adf1dac41c14] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[abd08e0f-9baa-41f6-91fa-adf1dac41c14] app/commands/authorize_api_request.rb:17:in `user'
+[abd08e0f-9baa-41f6-91fa-adf1dac41c14] app/commands/authorize_api_request.rb:9:in `call'
+[abd08e0f-9baa-41f6-91fa-adf1dac41c14] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:11.223543 #18446]  INFO -- : [d670e445-77ea-4886-b326-8b57bc2736e2] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:11 -0800
+I, [2020-02-10T17:22:11.224212 #18446]  INFO -- : [d670e445-77ea-4886-b326-8b57bc2736e2] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:11.230116 #18446]  INFO -- : [d670e445-77ea-4886-b326-8b57bc2736e2] Completed 500 Internal Server Error in 6ms
+F, [2020-02-10T17:22:11.230608 #18446] FATAL -- : [d670e445-77ea-4886-b326-8b57bc2736e2]   
+F, [2020-02-10T17:22:11.230663 #18446] FATAL -- : [d670e445-77ea-4886-b326-8b57bc2736e2] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:11.230685 #18446] FATAL -- : [d670e445-77ea-4886-b326-8b57bc2736e2]   
+F, [2020-02-10T17:22:11.230722 #18446] FATAL -- : [d670e445-77ea-4886-b326-8b57bc2736e2] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[d670e445-77ea-4886-b326-8b57bc2736e2] app/commands/authorize_api_request.rb:17:in `user'
+[d670e445-77ea-4886-b326-8b57bc2736e2] app/commands/authorize_api_request.rb:9:in `call'
+[d670e445-77ea-4886-b326-8b57bc2736e2] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:11.416749 #18446]  INFO -- : [df6fe2b6-130b-4db7-8630-b42200e0e270] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:11 -0800
+I, [2020-02-10T17:22:11.417441 #18446]  INFO -- : [df6fe2b6-130b-4db7-8630-b42200e0e270] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:11.422764 #18446]  INFO -- : [df6fe2b6-130b-4db7-8630-b42200e0e270] Completed 500 Internal Server Error in 5ms
+F, [2020-02-10T17:22:11.423201 #18446] FATAL -- : [df6fe2b6-130b-4db7-8630-b42200e0e270]   
+F, [2020-02-10T17:22:11.423262 #18446] FATAL -- : [df6fe2b6-130b-4db7-8630-b42200e0e270] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:11.423284 #18446] FATAL -- : [df6fe2b6-130b-4db7-8630-b42200e0e270]   
+F, [2020-02-10T17:22:11.423308 #18446] FATAL -- : [df6fe2b6-130b-4db7-8630-b42200e0e270] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[df6fe2b6-130b-4db7-8630-b42200e0e270] app/commands/authorize_api_request.rb:17:in `user'
+[df6fe2b6-130b-4db7-8630-b42200e0e270] app/commands/authorize_api_request.rb:9:in `call'
+[df6fe2b6-130b-4db7-8630-b42200e0e270] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:11.599978 #18446]  INFO -- : [8739c8f9-18f4-4c27-a296-66a64775b972] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:11 -0800
+I, [2020-02-10T17:22:11.600660 #18446]  INFO -- : [8739c8f9-18f4-4c27-a296-66a64775b972] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:11.604879 #18446]  INFO -- : [8739c8f9-18f4-4c27-a296-66a64775b972] Completed 500 Internal Server Error in 4ms
+F, [2020-02-10T17:22:11.605373 #18446] FATAL -- : [8739c8f9-18f4-4c27-a296-66a64775b972]   
+F, [2020-02-10T17:22:11.605421 #18446] FATAL -- : [8739c8f9-18f4-4c27-a296-66a64775b972] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:11.605451 #18446] FATAL -- : [8739c8f9-18f4-4c27-a296-66a64775b972]   
+F, [2020-02-10T17:22:11.605488 #18446] FATAL -- : [8739c8f9-18f4-4c27-a296-66a64775b972] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[8739c8f9-18f4-4c27-a296-66a64775b972] app/commands/authorize_api_request.rb:17:in `user'
+[8739c8f9-18f4-4c27-a296-66a64775b972] app/commands/authorize_api_request.rb:9:in `call'
+[8739c8f9-18f4-4c27-a296-66a64775b972] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:11.791972 #18446]  INFO -- : [8b361ab8-65ec-4a63-9616-e06064f88eda] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:11 -0800
+I, [2020-02-10T17:22:11.792677 #18446]  INFO -- : [8b361ab8-65ec-4a63-9616-e06064f88eda] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:11.798418 #18446]  INFO -- : [8b361ab8-65ec-4a63-9616-e06064f88eda] Completed 500 Internal Server Error in 6ms
+F, [2020-02-10T17:22:11.798838 #18446] FATAL -- : [8b361ab8-65ec-4a63-9616-e06064f88eda]   
+F, [2020-02-10T17:22:11.798887 #18446] FATAL -- : [8b361ab8-65ec-4a63-9616-e06064f88eda] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:11.798913 #18446] FATAL -- : [8b361ab8-65ec-4a63-9616-e06064f88eda]   
+F, [2020-02-10T17:22:11.798937 #18446] FATAL -- : [8b361ab8-65ec-4a63-9616-e06064f88eda] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[8b361ab8-65ec-4a63-9616-e06064f88eda] app/commands/authorize_api_request.rb:17:in `user'
+[8b361ab8-65ec-4a63-9616-e06064f88eda] app/commands/authorize_api_request.rb:9:in `call'
+[8b361ab8-65ec-4a63-9616-e06064f88eda] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:11.991691 #18446]  INFO -- : [ec5a2a6a-3911-4aad-b1d7-ff12b1397778] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:11 -0800
+I, [2020-02-10T17:22:11.992397 #18446]  INFO -- : [ec5a2a6a-3911-4aad-b1d7-ff12b1397778] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:11.997676 #18446]  INFO -- : [ec5a2a6a-3911-4aad-b1d7-ff12b1397778] Completed 500 Internal Server Error in 5ms
+F, [2020-02-10T17:22:11.998248 #18446] FATAL -- : [ec5a2a6a-3911-4aad-b1d7-ff12b1397778]   
+F, [2020-02-10T17:22:11.998313 #18446] FATAL -- : [ec5a2a6a-3911-4aad-b1d7-ff12b1397778] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:11.998337 #18446] FATAL -- : [ec5a2a6a-3911-4aad-b1d7-ff12b1397778]   
+F, [2020-02-10T17:22:11.998363 #18446] FATAL -- : [ec5a2a6a-3911-4aad-b1d7-ff12b1397778] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[ec5a2a6a-3911-4aad-b1d7-ff12b1397778] app/commands/authorize_api_request.rb:17:in `user'
+[ec5a2a6a-3911-4aad-b1d7-ff12b1397778] app/commands/authorize_api_request.rb:9:in `call'
+[ec5a2a6a-3911-4aad-b1d7-ff12b1397778] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:12.192104 #18446]  INFO -- : [8c90e797-84f8-4181-8e3f-47acf6ea522d] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:12 -0800
+I, [2020-02-10T17:22:12.192812 #18446]  INFO -- : [8c90e797-84f8-4181-8e3f-47acf6ea522d] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:12.197034 #18446]  INFO -- : [8c90e797-84f8-4181-8e3f-47acf6ea522d] Completed 500 Internal Server Error in 4ms
+F, [2020-02-10T17:22:12.197545 #18446] FATAL -- : [8c90e797-84f8-4181-8e3f-47acf6ea522d]   
+F, [2020-02-10T17:22:12.197610 #18446] FATAL -- : [8c90e797-84f8-4181-8e3f-47acf6ea522d] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:12.197641 #18446] FATAL -- : [8c90e797-84f8-4181-8e3f-47acf6ea522d]   
+F, [2020-02-10T17:22:12.197669 #18446] FATAL -- : [8c90e797-84f8-4181-8e3f-47acf6ea522d] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[8c90e797-84f8-4181-8e3f-47acf6ea522d] app/commands/authorize_api_request.rb:17:in `user'
+[8c90e797-84f8-4181-8e3f-47acf6ea522d] app/commands/authorize_api_request.rb:9:in `call'
+[8c90e797-84f8-4181-8e3f-47acf6ea522d] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:12.399759 #18446]  INFO -- : [7196d979-386c-46c2-bc33-79dda9143f66] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:12 -0800
+I, [2020-02-10T17:22:12.400441 #18446]  INFO -- : [7196d979-386c-46c2-bc33-79dda9143f66] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:12.405125 #18446]  INFO -- : [7196d979-386c-46c2-bc33-79dda9143f66] Completed 500 Internal Server Error in 5ms
+F, [2020-02-10T17:22:12.405687 #18446] FATAL -- : [7196d979-386c-46c2-bc33-79dda9143f66]   
+F, [2020-02-10T17:22:12.405743 #18446] FATAL -- : [7196d979-386c-46c2-bc33-79dda9143f66] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:12.405777 #18446] FATAL -- : [7196d979-386c-46c2-bc33-79dda9143f66]   
+F, [2020-02-10T17:22:12.405813 #18446] FATAL -- : [7196d979-386c-46c2-bc33-79dda9143f66] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[7196d979-386c-46c2-bc33-79dda9143f66] app/commands/authorize_api_request.rb:17:in `user'
+[7196d979-386c-46c2-bc33-79dda9143f66] app/commands/authorize_api_request.rb:9:in `call'
+[7196d979-386c-46c2-bc33-79dda9143f66] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:12.600347 #18446]  INFO -- : [0ba33d58-1952-4fac-9ec3-9abb9e388ce2] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:12 -0800
+I, [2020-02-10T17:22:12.600983 #18446]  INFO -- : [0ba33d58-1952-4fac-9ec3-9abb9e388ce2] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:12.606907 #18446]  INFO -- : [0ba33d58-1952-4fac-9ec3-9abb9e388ce2] Completed 500 Internal Server Error in 6ms
+F, [2020-02-10T17:22:12.607750 #18446] FATAL -- : [0ba33d58-1952-4fac-9ec3-9abb9e388ce2]   
+F, [2020-02-10T17:22:12.607880 #18446] FATAL -- : [0ba33d58-1952-4fac-9ec3-9abb9e388ce2] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:12.607930 #18446] FATAL -- : [0ba33d58-1952-4fac-9ec3-9abb9e388ce2]   
+F, [2020-02-10T17:22:12.607993 #18446] FATAL -- : [0ba33d58-1952-4fac-9ec3-9abb9e388ce2] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[0ba33d58-1952-4fac-9ec3-9abb9e388ce2] app/commands/authorize_api_request.rb:17:in `user'
+[0ba33d58-1952-4fac-9ec3-9abb9e388ce2] app/commands/authorize_api_request.rb:9:in `call'
+[0ba33d58-1952-4fac-9ec3-9abb9e388ce2] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:12.792014 #18446]  INFO -- : [ba71c7a4-4217-412e-8c3a-905fcc2961b4] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:12 -0800
+I, [2020-02-10T17:22:12.792454 #18446]  INFO -- : [ba71c7a4-4217-412e-8c3a-905fcc2961b4] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:12.795847 #18446]  INFO -- : [ba71c7a4-4217-412e-8c3a-905fcc2961b4] Completed 500 Internal Server Error in 3ms
+F, [2020-02-10T17:22:12.796679 #18446] FATAL -- : [ba71c7a4-4217-412e-8c3a-905fcc2961b4]   
+F, [2020-02-10T17:22:12.796789 #18446] FATAL -- : [ba71c7a4-4217-412e-8c3a-905fcc2961b4] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:12.796839 #18446] FATAL -- : [ba71c7a4-4217-412e-8c3a-905fcc2961b4]   
+F, [2020-02-10T17:22:12.796905 #18446] FATAL -- : [ba71c7a4-4217-412e-8c3a-905fcc2961b4] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[ba71c7a4-4217-412e-8c3a-905fcc2961b4] app/commands/authorize_api_request.rb:17:in `user'
+[ba71c7a4-4217-412e-8c3a-905fcc2961b4] app/commands/authorize_api_request.rb:9:in `call'
+[ba71c7a4-4217-412e-8c3a-905fcc2961b4] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:12.991650 #18446]  INFO -- : [5ab660b1-d460-42f4-b64a-db909bb0c06b] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:12 -0800
+I, [2020-02-10T17:22:12.992282 #18446]  INFO -- : [5ab660b1-d460-42f4-b64a-db909bb0c06b] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:12.997966 #18446]  INFO -- : [5ab660b1-d460-42f4-b64a-db909bb0c06b] Completed 500 Internal Server Error in 6ms
+F, [2020-02-10T17:22:12.998589 #18446] FATAL -- : [5ab660b1-d460-42f4-b64a-db909bb0c06b]   
+F, [2020-02-10T17:22:12.998659 #18446] FATAL -- : [5ab660b1-d460-42f4-b64a-db909bb0c06b] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:12.998690 #18446] FATAL -- : [5ab660b1-d460-42f4-b64a-db909bb0c06b]   
+F, [2020-02-10T17:22:12.998722 #18446] FATAL -- : [5ab660b1-d460-42f4-b64a-db909bb0c06b] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[5ab660b1-d460-42f4-b64a-db909bb0c06b] app/commands/authorize_api_request.rb:17:in `user'
+[5ab660b1-d460-42f4-b64a-db909bb0c06b] app/commands/authorize_api_request.rb:9:in `call'
+[5ab660b1-d460-42f4-b64a-db909bb0c06b] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:13.192031 #18446]  INFO -- : [6968cd16-0465-44e4-b545-6fa8500a45b7] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:13 -0800
+I, [2020-02-10T17:22:13.192688 #18446]  INFO -- : [6968cd16-0465-44e4-b545-6fa8500a45b7] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:13.198172 #18446]  INFO -- : [6968cd16-0465-44e4-b545-6fa8500a45b7] Completed 500 Internal Server Error in 5ms
+F, [2020-02-10T17:22:13.198959 #18446] FATAL -- : [6968cd16-0465-44e4-b545-6fa8500a45b7]   
+F, [2020-02-10T17:22:13.199043 #18446] FATAL -- : [6968cd16-0465-44e4-b545-6fa8500a45b7] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:13.199090 #18446] FATAL -- : [6968cd16-0465-44e4-b545-6fa8500a45b7]   
+F, [2020-02-10T17:22:13.199144 #18446] FATAL -- : [6968cd16-0465-44e4-b545-6fa8500a45b7] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[6968cd16-0465-44e4-b545-6fa8500a45b7] app/commands/authorize_api_request.rb:17:in `user'
+[6968cd16-0465-44e4-b545-6fa8500a45b7] app/commands/authorize_api_request.rb:9:in `call'
+[6968cd16-0465-44e4-b545-6fa8500a45b7] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:13.400217 #18446]  INFO -- : [d6982cfb-23d9-448e-8909-cbfcc9ac9828] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:13 -0800
+I, [2020-02-10T17:22:13.400875 #18446]  INFO -- : [d6982cfb-23d9-448e-8909-cbfcc9ac9828] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:13.406639 #18446]  INFO -- : [d6982cfb-23d9-448e-8909-cbfcc9ac9828] Completed 500 Internal Server Error in 6ms
+F, [2020-02-10T17:22:13.407273 #18446] FATAL -- : [d6982cfb-23d9-448e-8909-cbfcc9ac9828]   
+F, [2020-02-10T17:22:13.407350 #18446] FATAL -- : [d6982cfb-23d9-448e-8909-cbfcc9ac9828] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:13.407383 #18446] FATAL -- : [d6982cfb-23d9-448e-8909-cbfcc9ac9828]   
+F, [2020-02-10T17:22:13.407420 #18446] FATAL -- : [d6982cfb-23d9-448e-8909-cbfcc9ac9828] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[d6982cfb-23d9-448e-8909-cbfcc9ac9828] app/commands/authorize_api_request.rb:17:in `user'
+[d6982cfb-23d9-448e-8909-cbfcc9ac9828] app/commands/authorize_api_request.rb:9:in `call'
+[d6982cfb-23d9-448e-8909-cbfcc9ac9828] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:13.591857 #18446]  INFO -- : [8563d4c3-ff5d-46f1-894d-e6df06d94369] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:13 -0800
+I, [2020-02-10T17:22:13.592527 #18446]  INFO -- : [8563d4c3-ff5d-46f1-894d-e6df06d94369] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:13.596657 #18446]  INFO -- : [8563d4c3-ff5d-46f1-894d-e6df06d94369] Completed 500 Internal Server Error in 4ms
+F, [2020-02-10T17:22:13.597219 #18446] FATAL -- : [8563d4c3-ff5d-46f1-894d-e6df06d94369]   
+F, [2020-02-10T17:22:13.597275 #18446] FATAL -- : [8563d4c3-ff5d-46f1-894d-e6df06d94369] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:13.597300 #18446] FATAL -- : [8563d4c3-ff5d-46f1-894d-e6df06d94369]   
+F, [2020-02-10T17:22:13.597326 #18446] FATAL -- : [8563d4c3-ff5d-46f1-894d-e6df06d94369] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[8563d4c3-ff5d-46f1-894d-e6df06d94369] app/commands/authorize_api_request.rb:17:in `user'
+[8563d4c3-ff5d-46f1-894d-e6df06d94369] app/commands/authorize_api_request.rb:9:in `call'
+[8563d4c3-ff5d-46f1-894d-e6df06d94369] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:13.791613 #18446]  INFO -- : [7dfc955d-8baa-4451-a1de-369a2ab2fb34] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:13 -0800
+I, [2020-02-10T17:22:13.792224 #18446]  INFO -- : [7dfc955d-8baa-4451-a1de-369a2ab2fb34] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:13.795902 #18446]  INFO -- : [7dfc955d-8baa-4451-a1de-369a2ab2fb34] Completed 500 Internal Server Error in 4ms
+F, [2020-02-10T17:22:13.796458 #18446] FATAL -- : [7dfc955d-8baa-4451-a1de-369a2ab2fb34]   
+F, [2020-02-10T17:22:13.796522 #18446] FATAL -- : [7dfc955d-8baa-4451-a1de-369a2ab2fb34] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:13.796550 #18446] FATAL -- : [7dfc955d-8baa-4451-a1de-369a2ab2fb34]   
+F, [2020-02-10T17:22:13.796585 #18446] FATAL -- : [7dfc955d-8baa-4451-a1de-369a2ab2fb34] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[7dfc955d-8baa-4451-a1de-369a2ab2fb34] app/commands/authorize_api_request.rb:17:in `user'
+[7dfc955d-8baa-4451-a1de-369a2ab2fb34] app/commands/authorize_api_request.rb:9:in `call'
+[7dfc955d-8baa-4451-a1de-369a2ab2fb34] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:13.991916 #18446]  INFO -- : [e450c6d7-0929-4a68-bdda-d4d77548a2ad] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:13 -0800
+I, [2020-02-10T17:22:13.992562 #18446]  INFO -- : [e450c6d7-0929-4a68-bdda-d4d77548a2ad] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:13.996793 #18446]  INFO -- : [e450c6d7-0929-4a68-bdda-d4d77548a2ad] Completed 500 Internal Server Error in 4ms
+F, [2020-02-10T17:22:13.997310 #18446] FATAL -- : [e450c6d7-0929-4a68-bdda-d4d77548a2ad]   
+F, [2020-02-10T17:22:13.997372 #18446] FATAL -- : [e450c6d7-0929-4a68-bdda-d4d77548a2ad] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:13.997402 #18446] FATAL -- : [e450c6d7-0929-4a68-bdda-d4d77548a2ad]   
+F, [2020-02-10T17:22:13.997429 #18446] FATAL -- : [e450c6d7-0929-4a68-bdda-d4d77548a2ad] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[e450c6d7-0929-4a68-bdda-d4d77548a2ad] app/commands/authorize_api_request.rb:17:in `user'
+[e450c6d7-0929-4a68-bdda-d4d77548a2ad] app/commands/authorize_api_request.rb:9:in `call'
+[e450c6d7-0929-4a68-bdda-d4d77548a2ad] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:14.182473 #18446]  INFO -- : [8b7d3471-0d64-4b87-8a3d-b9a31b99a0c2] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:14 -0800
+I, [2020-02-10T17:22:14.183164 #18446]  INFO -- : [8b7d3471-0d64-4b87-8a3d-b9a31b99a0c2] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:14.189073 #18446]  INFO -- : [8b7d3471-0d64-4b87-8a3d-b9a31b99a0c2] Completed 500 Internal Server Error in 6ms
+F, [2020-02-10T17:22:14.189830 #18446] FATAL -- : [8b7d3471-0d64-4b87-8a3d-b9a31b99a0c2]   
+F, [2020-02-10T17:22:14.189909 #18446] FATAL -- : [8b7d3471-0d64-4b87-8a3d-b9a31b99a0c2] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:14.189952 #18446] FATAL -- : [8b7d3471-0d64-4b87-8a3d-b9a31b99a0c2]   
+F, [2020-02-10T17:22:14.189996 #18446] FATAL -- : [8b7d3471-0d64-4b87-8a3d-b9a31b99a0c2] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[8b7d3471-0d64-4b87-8a3d-b9a31b99a0c2] app/commands/authorize_api_request.rb:17:in `user'
+[8b7d3471-0d64-4b87-8a3d-b9a31b99a0c2] app/commands/authorize_api_request.rb:9:in `call'
+[8b7d3471-0d64-4b87-8a3d-b9a31b99a0c2] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:14.381038 #18446]  INFO -- : [0bacf858-0eda-4d85-8959-c7d978aef520] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:14 -0800
+I, [2020-02-10T17:22:14.381475 #18446]  INFO -- : [0bacf858-0eda-4d85-8959-c7d978aef520] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:14.384692 #18446]  INFO -- : [0bacf858-0eda-4d85-8959-c7d978aef520] Completed 500 Internal Server Error in 3ms
+F, [2020-02-10T17:22:14.385083 #18446] FATAL -- : [0bacf858-0eda-4d85-8959-c7d978aef520]   
+F, [2020-02-10T17:22:14.385121 #18446] FATAL -- : [0bacf858-0eda-4d85-8959-c7d978aef520] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:14.385142 #18446] FATAL -- : [0bacf858-0eda-4d85-8959-c7d978aef520]   
+F, [2020-02-10T17:22:14.385167 #18446] FATAL -- : [0bacf858-0eda-4d85-8959-c7d978aef520] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[0bacf858-0eda-4d85-8959-c7d978aef520] app/commands/authorize_api_request.rb:17:in `user'
+[0bacf858-0eda-4d85-8959-c7d978aef520] app/commands/authorize_api_request.rb:9:in `call'
+[0bacf858-0eda-4d85-8959-c7d978aef520] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:14.581603 #18446]  INFO -- : [346df6c3-6151-4fac-9a56-bb09a1c3bfbe] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:14 -0800
+I, [2020-02-10T17:22:14.582062 #18446]  INFO -- : [346df6c3-6151-4fac-9a56-bb09a1c3bfbe] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:14.584866 #18446]  INFO -- : [346df6c3-6151-4fac-9a56-bb09a1c3bfbe] Completed 500 Internal Server Error in 3ms
+F, [2020-02-10T17:22:14.585264 #18446] FATAL -- : [346df6c3-6151-4fac-9a56-bb09a1c3bfbe]   
+F, [2020-02-10T17:22:14.585304 #18446] FATAL -- : [346df6c3-6151-4fac-9a56-bb09a1c3bfbe] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:14.585340 #18446] FATAL -- : [346df6c3-6151-4fac-9a56-bb09a1c3bfbe]   
+F, [2020-02-10T17:22:14.585365 #18446] FATAL -- : [346df6c3-6151-4fac-9a56-bb09a1c3bfbe] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[346df6c3-6151-4fac-9a56-bb09a1c3bfbe] app/commands/authorize_api_request.rb:17:in `user'
+[346df6c3-6151-4fac-9a56-bb09a1c3bfbe] app/commands/authorize_api_request.rb:9:in `call'
+[346df6c3-6151-4fac-9a56-bb09a1c3bfbe] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:14.785011 #18446]  INFO -- : [41cf029f-4b59-4e10-87d7-d8102b1acbe3] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:14 -0800
+I, [2020-02-10T17:22:14.785697 #18446]  INFO -- : [41cf029f-4b59-4e10-87d7-d8102b1acbe3] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:14.790907 #18446]  INFO -- : [41cf029f-4b59-4e10-87d7-d8102b1acbe3] Completed 500 Internal Server Error in 5ms
+F, [2020-02-10T17:22:14.791287 #18446] FATAL -- : [41cf029f-4b59-4e10-87d7-d8102b1acbe3]   
+F, [2020-02-10T17:22:14.791326 #18446] FATAL -- : [41cf029f-4b59-4e10-87d7-d8102b1acbe3] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:14.791348 #18446] FATAL -- : [41cf029f-4b59-4e10-87d7-d8102b1acbe3]   
+F, [2020-02-10T17:22:14.791371 #18446] FATAL -- : [41cf029f-4b59-4e10-87d7-d8102b1acbe3] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[41cf029f-4b59-4e10-87d7-d8102b1acbe3] app/commands/authorize_api_request.rb:17:in `user'
+[41cf029f-4b59-4e10-87d7-d8102b1acbe3] app/commands/authorize_api_request.rb:9:in `call'
+[41cf029f-4b59-4e10-87d7-d8102b1acbe3] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:14.991584 #18446]  INFO -- : [2f67b2e4-4ff1-4701-aaa8-5a7f230d889f] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:14 -0800
+I, [2020-02-10T17:22:14.992290 #18446]  INFO -- : [2f67b2e4-4ff1-4701-aaa8-5a7f230d889f] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:14.996655 #18446]  INFO -- : [2f67b2e4-4ff1-4701-aaa8-5a7f230d889f] Completed 500 Internal Server Error in 4ms
+F, [2020-02-10T17:22:14.997056 #18446] FATAL -- : [2f67b2e4-4ff1-4701-aaa8-5a7f230d889f]   
+F, [2020-02-10T17:22:14.997103 #18446] FATAL -- : [2f67b2e4-4ff1-4701-aaa8-5a7f230d889f] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:14.997125 #18446] FATAL -- : [2f67b2e4-4ff1-4701-aaa8-5a7f230d889f]   
+F, [2020-02-10T17:22:14.997154 #18446] FATAL -- : [2f67b2e4-4ff1-4701-aaa8-5a7f230d889f] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[2f67b2e4-4ff1-4701-aaa8-5a7f230d889f] app/commands/authorize_api_request.rb:17:in `user'
+[2f67b2e4-4ff1-4701-aaa8-5a7f230d889f] app/commands/authorize_api_request.rb:9:in `call'
+[2f67b2e4-4ff1-4701-aaa8-5a7f230d889f] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:15.191805 #18446]  INFO -- : [31e61796-8145-45eb-833e-5cb7b3a595e0] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:15 -0800
+I, [2020-02-10T17:22:15.192508 #18446]  INFO -- : [31e61796-8145-45eb-833e-5cb7b3a595e0] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:15.197462 #18446]  INFO -- : [31e61796-8145-45eb-833e-5cb7b3a595e0] Completed 500 Internal Server Error in 5ms
+F, [2020-02-10T17:22:15.197929 #18446] FATAL -- : [31e61796-8145-45eb-833e-5cb7b3a595e0]   
+F, [2020-02-10T17:22:15.198045 #18446] FATAL -- : [31e61796-8145-45eb-833e-5cb7b3a595e0] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:15.198092 #18446] FATAL -- : [31e61796-8145-45eb-833e-5cb7b3a595e0]   
+F, [2020-02-10T17:22:15.198116 #18446] FATAL -- : [31e61796-8145-45eb-833e-5cb7b3a595e0] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[31e61796-8145-45eb-833e-5cb7b3a595e0] app/commands/authorize_api_request.rb:17:in `user'
+[31e61796-8145-45eb-833e-5cb7b3a595e0] app/commands/authorize_api_request.rb:9:in `call'
+[31e61796-8145-45eb-833e-5cb7b3a595e0] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:15.391903 #18446]  INFO -- : [fea699bc-bd5a-427d-bf0b-557a1724b8ef] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:15 -0800
+I, [2020-02-10T17:22:15.392745 #18446]  INFO -- : [fea699bc-bd5a-427d-bf0b-557a1724b8ef] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:15.397762 #18446]  INFO -- : [fea699bc-bd5a-427d-bf0b-557a1724b8ef] Completed 500 Internal Server Error in 5ms
+F, [2020-02-10T17:22:15.398594 #18446] FATAL -- : [fea699bc-bd5a-427d-bf0b-557a1724b8ef]   
+F, [2020-02-10T17:22:15.398698 #18446] FATAL -- : [fea699bc-bd5a-427d-bf0b-557a1724b8ef] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:15.398747 #18446] FATAL -- : [fea699bc-bd5a-427d-bf0b-557a1724b8ef]   
+F, [2020-02-10T17:22:15.398807 #18446] FATAL -- : [fea699bc-bd5a-427d-bf0b-557a1724b8ef] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[fea699bc-bd5a-427d-bf0b-557a1724b8ef] app/commands/authorize_api_request.rb:17:in `user'
+[fea699bc-bd5a-427d-bf0b-557a1724b8ef] app/commands/authorize_api_request.rb:9:in `call'
+[fea699bc-bd5a-427d-bf0b-557a1724b8ef] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:15.591869 #18446]  INFO -- : [4ed27fc4-482b-477d-9cd4-0530fdb1a6cf] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:15 -0800
+I, [2020-02-10T17:22:15.592549 #18446]  INFO -- : [4ed27fc4-482b-477d-9cd4-0530fdb1a6cf] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:15.597967 #18446]  INFO -- : [4ed27fc4-482b-477d-9cd4-0530fdb1a6cf] Completed 500 Internal Server Error in 5ms
+F, [2020-02-10T17:22:15.598820 #18446] FATAL -- : [4ed27fc4-482b-477d-9cd4-0530fdb1a6cf]   
+F, [2020-02-10T17:22:15.598929 #18446] FATAL -- : [4ed27fc4-482b-477d-9cd4-0530fdb1a6cf] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:15.598982 #18446] FATAL -- : [4ed27fc4-482b-477d-9cd4-0530fdb1a6cf]   
+F, [2020-02-10T17:22:15.599006 #18446] FATAL -- : [4ed27fc4-482b-477d-9cd4-0530fdb1a6cf] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[4ed27fc4-482b-477d-9cd4-0530fdb1a6cf] app/commands/authorize_api_request.rb:17:in `user'
+[4ed27fc4-482b-477d-9cd4-0530fdb1a6cf] app/commands/authorize_api_request.rb:9:in `call'
+[4ed27fc4-482b-477d-9cd4-0530fdb1a6cf] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:15.792110 #18446]  INFO -- : [4b9832da-7764-4d07-84dd-077bb5418c78] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:15 -0800
+I, [2020-02-10T17:22:15.792819 #18446]  INFO -- : [4b9832da-7764-4d07-84dd-077bb5418c78] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:15.799017 #18446]  INFO -- : [4b9832da-7764-4d07-84dd-077bb5418c78] Completed 500 Internal Server Error in 6ms
+F, [2020-02-10T17:22:15.799846 #18446] FATAL -- : [4b9832da-7764-4d07-84dd-077bb5418c78]   
+F, [2020-02-10T17:22:15.799945 #18446] FATAL -- : [4b9832da-7764-4d07-84dd-077bb5418c78] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:15.799993 #18446] FATAL -- : [4b9832da-7764-4d07-84dd-077bb5418c78]   
+F, [2020-02-10T17:22:15.800053 #18446] FATAL -- : [4b9832da-7764-4d07-84dd-077bb5418c78] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[4b9832da-7764-4d07-84dd-077bb5418c78] app/commands/authorize_api_request.rb:17:in `user'
+[4b9832da-7764-4d07-84dd-077bb5418c78] app/commands/authorize_api_request.rb:9:in `call'
+[4b9832da-7764-4d07-84dd-077bb5418c78] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:15.991679 #18446]  INFO -- : [d380dcbd-da93-46c6-9d92-0f27ec5155a2] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:15 -0800
+I, [2020-02-10T17:22:15.992366 #18446]  INFO -- : [d380dcbd-da93-46c6-9d92-0f27ec5155a2] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:15.997381 #18446]  INFO -- : [d380dcbd-da93-46c6-9d92-0f27ec5155a2] Completed 500 Internal Server Error in 5ms
+F, [2020-02-10T17:22:15.997892 #18446] FATAL -- : [d380dcbd-da93-46c6-9d92-0f27ec5155a2]   
+F, [2020-02-10T17:22:15.997973 #18446] FATAL -- : [d380dcbd-da93-46c6-9d92-0f27ec5155a2] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:15.998016 #18446] FATAL -- : [d380dcbd-da93-46c6-9d92-0f27ec5155a2]   
+F, [2020-02-10T17:22:15.998073 #18446] FATAL -- : [d380dcbd-da93-46c6-9d92-0f27ec5155a2] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[d380dcbd-da93-46c6-9d92-0f27ec5155a2] app/commands/authorize_api_request.rb:17:in `user'
+[d380dcbd-da93-46c6-9d92-0f27ec5155a2] app/commands/authorize_api_request.rb:9:in `call'
+[d380dcbd-da93-46c6-9d92-0f27ec5155a2] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:16.192066 #18446]  INFO -- : [51223a2b-8be0-49e2-ba0c-22299b1bd120] Started GET "/api/v1/todos" for 127.0.0.1 at 2020-02-10 17:22:16 -0800
+I, [2020-02-10T17:22:16.192786 #18446]  INFO -- : [51223a2b-8be0-49e2-ba0c-22299b1bd120] Processing by TodosController#index as HTML
+I, [2020-02-10T17:22:16.198274 #18446]  INFO -- : [51223a2b-8be0-49e2-ba0c-22299b1bd120] Completed 500 Internal Server Error in 5ms
+F, [2020-02-10T17:22:16.198738 #18446] FATAL -- : [51223a2b-8be0-49e2-ba0c-22299b1bd120]   
+F, [2020-02-10T17:22:16.198801 #18446] FATAL -- : [51223a2b-8be0-49e2-ba0c-22299b1bd120] NameError (uninitialized constant AuthorizeApiRequest::JsonWebToken):
+F, [2020-02-10T17:22:16.198825 #18446] FATAL -- : [51223a2b-8be0-49e2-ba0c-22299b1bd120]   
+F, [2020-02-10T17:22:16.198850 #18446] FATAL -- : [51223a2b-8be0-49e2-ba0c-22299b1bd120] app/commands/authorize_api_request.rb:22:in `decoded_auth_token'
+[51223a2b-8be0-49e2-ba0c-22299b1bd120] app/commands/authorize_api_request.rb:17:in `user'
+[51223a2b-8be0-49e2-ba0c-22299b1bd120] app/commands/authorize_api_request.rb:9:in `call'
+[51223a2b-8be0-49e2-ba0c-22299b1bd120] app/controllers/application_controller.rb:8:in `authenticate_request'
+I, [2020-02-10T17:22:26.350413 #18446]  INFO -- : [b2057eed-f875-4f5b-9c7d-1995fd54e9ef] Started GET "/admin" for 127.0.0.1 at 2020-02-10 17:22:26 -0800
+I, [2020-02-10T17:22:26.351184 #18446]  INFO -- : [b2057eed-f875-4f5b-9c7d-1995fd54e9ef] Processing by Trestle::DashboardController#index as HTML
+I, [2020-02-10T17:22:26.353368 #18446]  INFO -- : [b2057eed-f875-4f5b-9c7d-1995fd54e9ef] Redirected to http://localhost:3000/admin/todos
+I, [2020-02-10T17:22:26.353522 #18446]  INFO -- : [b2057eed-f875-4f5b-9c7d-1995fd54e9ef] Completed 302 Found in 2ms
+I, [2020-02-10T17:22:26.363539 #18446]  INFO -- : [1e7c8766-41bb-4a2e-a338-08107d69c45a] Started GET "/admin/todos" for 127.0.0.1 at 2020-02-10 17:22:26 -0800
+I, [2020-02-10T17:22:26.364347 #18446]  INFO -- : [1e7c8766-41bb-4a2e-a338-08107d69c45a] Processing by TodosAdmin::AdminController#index as HTML
+I, [2020-02-10T17:22:26.368810 #18446]  INFO -- : [1e7c8766-41bb-4a2e-a338-08107d69c45a]   Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+I, [2020-02-10T17:22:26.411057 #18446]  INFO -- : [1e7c8766-41bb-4a2e-a338-08107d69c45a]   Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (7.3ms)
+I, [2020-02-10T17:22:26.415053 #18446]  INFO -- : [1e7c8766-41bb-4a2e-a338-08107d69c45a]   Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (3.5ms)
+I, [2020-02-10T17:22:26.416679 #18446]  INFO -- : [1e7c8766-41bb-4a2e-a338-08107d69c45a]   Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.3ms)
+I, [2020-02-10T17:22:26.418419 #18446]  INFO -- : [1e7c8766-41bb-4a2e-a338-08107d69c45a]   Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.5ms)
+I, [2020-02-10T17:22:26.479797 #18446]  INFO -- : [1e7c8766-41bb-4a2e-a338-08107d69c45a]   Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (59.6ms)
+I, [2020-02-10T17:22:26.479891 #18446]  INFO -- : [1e7c8766-41bb-4a2e-a338-08107d69c45a]   Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (80.1ms)
+I, [2020-02-10T17:22:26.479946 #18446]  INFO -- : [1e7c8766-41bb-4a2e-a338-08107d69c45a]   Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (111.0ms)
+I, [2020-02-10T17:22:26.480074 #18446]  INFO -- : [1e7c8766-41bb-4a2e-a338-08107d69c45a] Completed 500 Internal Server Error in 116ms
+F, [2020-02-10T17:22:26.482069 #18446] FATAL -- : [1e7c8766-41bb-4a2e-a338-08107d69c45a]   
+F, [2020-02-10T17:22:26.482110 #18446] FATAL -- : [1e7c8766-41bb-4a2e-a338-08107d69c45a] ActionView::Template::Error (FATAL:  Peer authentication failed for user "lifehubnew"
+):
+F, [2020-02-10T17:22:26.482209 #18446] FATAL -- : [1e7c8766-41bb-4a2e-a338-08107d69c45a]      5:     <% if table.header? %>
+[1e7c8766-41bb-4a2e-a338-08107d69c45a]      6:     <thead>
+[1e7c8766-41bb-4a2e-a338-08107d69c45a]      7:       <tr>
+[1e7c8766-41bb-4a2e-a338-08107d69c45a]      8:         <% table.columns.each do |column| %>
+[1e7c8766-41bb-4a2e-a338-08107d69c45a]      9:           <%= content_tag(:th, column.header, class: column.classes, data: column.data) %>
+[1e7c8766-41bb-4a2e-a338-08107d69c45a]     10:         <% end %>
+[1e7c8766-41bb-4a2e-a338-08107d69c45a]     11:       </tr>
+F, [2020-02-10T17:22:26.482232 #18446] FATAL -- : [1e7c8766-41bb-4a2e-a338-08107d69c45a]   
+F, [2020-02-10T17:22:26.482281 #18446] FATAL -- : [1e7c8766-41bb-4a2e-a338-08107d69c45a] pg (1.2.2) lib/pg.rb:58:in `initialize'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] pg (1.2.2) lib/pg.rb:58:in `new'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] pg (1.2.2) lib/pg.rb:58:in `connect'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activerecord (5.2.4.1) lib/active_record/connection_adapters/postgresql_adapter.rb:692:in `connect'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activerecord (5.2.4.1) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activerecord (5.2.4.1) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activerecord (5.2.4.1) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activerecord (5.2.4.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activerecord (5.2.4.1) lib/active_record/connection_handling.rb:90:in `connection'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activerecord (5.2.4.1) lib/active_record/model_schema.rb:466:in `load_schema!'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activerecord (5.2.4.1) lib/active_record/attributes.rb:234:in `load_schema!'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activerecord (5.2.4.1) lib/active_record/attribute_decorators.rb:51:in `load_schema!'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activerecord (5.2.4.1) lib/active_record/model_schema.rb:459:in `block in load_schema'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] /home/travis/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/monitor.rb:230:in `mon_synchronize'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activerecord (5.2.4.1) lib/active_record/model_schema.rb:456:in `load_schema'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activerecord (5.2.4.1) lib/active_record/model_schema.rb:341:in `columns'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] trestle (0.9.2) lib/trestle/adapters/active_record_adapter.rb:58:in `default_attributes'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] trestle (0.9.2) lib/trestle/adapters/active_record_adapter.rb:45:in `default_table_attributes'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] trestle (0.9.2) lib/trestle/resource/adapter_methods.rb:17:in `default_table_attributes'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] trestle (0.9.2) lib/trestle/table/automatic.rb:13:in `content_columns'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] trestle (0.9.2) lib/trestle/table/automatic.rb:9:in `columns'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] trestle (0.9.2) lib/trestle/table/row.rb:23:in `columns'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] trestle (0.9.2) lib/trestle/table.rb:62:in `columns'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] trestle (0.9.2) app/views/trestle/table/_table.html.erb:8:in `block in __home_travis__rvm_gems_ruby_______gems_trestle_______app_views_trestle_table__table_html_erb__1575096150173471733_47394948309860'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/helpers/capture_helper.rb:41:in `block in capture'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/helpers/capture_helper.rb:205:in `with_output_buffer'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/helpers/capture_helper.rb:41:in `capture'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/helpers/tag_helper.rb:272:in `content_tag'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] trestle (0.9.2) app/views/trestle/table/_table.html.erb:4:in `__home_travis__rvm_gems_ruby_______gems_trestle_______app_views_trestle_table__table_html_erb__1575096150173471733_47394948309860'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/template.rb:159:in `block in render'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activesupport (5.2.4.1) lib/active_support/notifications.rb:170:in `instrument'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/template.rb:354:in `instrument_render_template'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/template.rb:157:in `render'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/renderer/partial_renderer.rb:344:in `block in render_partial'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/renderer/abstract_renderer.rb:44:in `block in instrument'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/renderer/abstract_renderer.rb:43:in `instrument'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/renderer/partial_renderer.rb:333:in `render_partial'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/renderer/partial_renderer.rb:312:in `render'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/renderer/renderer.rb:49:in `render_partial'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/helpers/rendering_helper.rb:36:in `render'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] trestle (0.9.2) app/views/trestle/resource/index.html.erb:18:in `block in __home_travis__rvm_gems_ruby_______gems_trestle_______app_views_trestle_resource_index_html_erb__4395332960778576598_47394958843140'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/helpers/capture_helper.rb:41:in `block in capture'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/helpers/capture_helper.rb:205:in `with_output_buffer'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/helpers/capture_helper.rb:41:in `capture'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/helpers/rendering_helper.rb:92:in `_layout_for'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/renderer/partial_renderer.rb:345:in `block (2 levels) in render_partial'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] trestle (0.9.2) app/views/trestle/application/_layout.html.erb:10:in `block in __home_travis__rvm_gems_ruby_______gems_trestle_______app_views_trestle_application__layout_html_erb__407120301505732728_47394946726380'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/helpers/capture_helper.rb:41:in `block in capture'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/helpers/capture_helper.rb:205:in `with_output_buffer'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/helpers/capture_helper.rb:41:in `capture'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] trestle (0.9.2) app/helpers/trestle/container_helper.rb:5:in `container'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] trestle (0.9.2) app/views/trestle/application/_layout.html.erb:9:in `__home_travis__rvm_gems_ruby_______gems_trestle_______app_views_trestle_application__layout_html_erb__407120301505732728_47394946726380'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/template.rb:159:in `block in render'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activesupport (5.2.4.1) lib/active_support/notifications.rb:170:in `instrument'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/template.rb:354:in `instrument_render_template'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/template.rb:157:in `render'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/renderer/partial_renderer.rb:344:in `block in render_partial'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/renderer/abstract_renderer.rb:44:in `block in instrument'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/renderer/abstract_renderer.rb:43:in `instrument'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/renderer/partial_renderer.rb:333:in `render_partial'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/renderer/partial_renderer.rb:312:in `render'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/renderer/renderer.rb:49:in `render_partial'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/helpers/rendering_helper.rb:31:in `render'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] trestle (0.9.2) app/views/trestle/resource/index.html.erb:11:in `__home_travis__rvm_gems_ruby_______gems_trestle_______app_views_trestle_resource_index_html_erb__4395332960778576598_47394958843140'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/template.rb:159:in `block in render'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activesupport (5.2.4.1) lib/active_support/notifications.rb:170:in `instrument'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/template.rb:354:in `instrument_render_template'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/template.rb:157:in `render'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/renderer/abstract_renderer.rb:44:in `block in instrument'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/renderer/abstract_renderer.rb:43:in `instrument'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/renderer/template_renderer.rb:16:in `render'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/renderer/renderer.rb:44:in `render_template'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/renderer/renderer.rb:25:in `render'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/rendering.rb:103:in `_render_template'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/rendering.rb:84:in `render_to_body'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/abstract_controller/rendering.rb:25:in `render'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_controller/metal/rendering.rb:36:in `render'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:46:in `block (2 levels) in render'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activesupport (5.2.4.1) lib/active_support/core_ext/benchmark.rb:14:in `block in ms'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] /home/travis/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/benchmark.rb:308:in `realtime'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activesupport (5.2.4.1) lib/active_support/core_ext/benchmark.rb:14:in `ms'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:46:in `block in render'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activerecord (5.2.4.1) lib/active_record/railties/controller_runtime.rb:36:in `cleanup_view_runtime'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:45:in `render'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_controller/metal/implicit_render.rb:35:in `default_render'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/abstract_controller/base.rb:194:in `process_action'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activesupport (5.2.4.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activerecord (5.2.4.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/abstract_controller/base.rb:134:in `process'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] railties (5.2.4.1) lib/rails/railtie.rb:190:in `public_send'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] railties (5.2.4.1) lib/rails/railtie.rb:190:in `method_missing'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] rack (2.2.1) lib/rack/session/abstract/id.rb:265:in `context'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] rack (2.2.1) lib/rack/session/abstract/id.rb:259:in `call'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] rack (2.2.1) lib/rack/method_override.rb:24:in `call'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] rack (2.2.1) lib/rack/etag.rb:27:in `call'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] rack (2.2.1) lib/rack/conditional_get.rb:27:in `call'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] rack (2.2.1) lib/rack/head.rb:12:in `call'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] rack (2.2.1) lib/rack/runtime.rb:22:in `call'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] rack (2.2.1) lib/rack/sendfile.rb:110:in `call'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+[1e7c8766-41bb-4a2e-a338-08107d69c45a] puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
