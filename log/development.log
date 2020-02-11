@@ -1,0 +1,1770 @@
+Started GET "/" for ::1 at 2020-02-10 02:56:36 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/railties-5.1.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/railties-5.1.7/lib/rails/templates/rails/welcome/index.html.erb (2.3ms)
+Completed 200 OK in 231ms (Views: 4.8ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 03:00:39 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/railties-5.1.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/railties-5.1.7/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 96ms (Views: 4.2ms)
+
+
+Started GET "/admin" for ::1 at 2020-02-10 03:00:42 -0800
+Processing by Trestle::DashboardController#index as HTML
+Redirected to http://localhost:3000/admin/articles
+Completed 302 Found in 2ms
+
+
+Started GET "/admin/articles" for ::1 at 2020-02-10 03:00:42 -0800
+Processing by ArticlesAdmin::AdminController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NameError (Unable to find model Article. Specify a different model using Trestle.resource(:articles, model: MyModel)):
+  
+trestle (0.9.2) lib/trestle/resource.rb:165:in `rescue in infer_model_class'
+trestle (0.9.2) lib/trestle/resource.rb:161:in `infer_model_class'
+trestle (0.9.2) lib/trestle/resource.rb:82:in `model'
+trestle (0.9.2) lib/trestle/admin.rb:17:in `method_missing'
+trestle (0.9.2) lib/trestle/adapters/adapter.rb:7:in `model'
+trestle (0.9.2) lib/trestle/adapters/active_record_adapter.rb:5:in `collection'
+trestle (0.9.2) lib/trestle/resource/adapter_methods.rb:14:in `collection'
+trestle (0.9.2) lib/trestle/resource/collection.rb:4:in `collection'
+trestle (0.9.2) lib/trestle/resource/collection.rb:12:in `prepare'
+trestle (0.9.2) lib/trestle/resource.rb:51:in `prepare_collection'
+trestle (0.9.2) lib/trestle/resource/controller/data_methods.rb:22:in `load_collection'
+activesupport (5.1.7) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.7) lib/active_support/callbacks.rb:178:in `block (2 levels) in halting_and_conditional'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.7) lib/active_support/callbacks.rb:179:in `block in halting_and_conditional'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.7) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+railties (5.1.7) lib/rails/railtie.rb:185:in `public_send'
+railties (5.1.7) lib/rails/railtie.rb:185:in `method_missing'
+actionpack (5.1.7) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.1.7) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.2.1) lib/rack/session/abstract/id.rb:265:in `context'
+rack (2.2.1) lib/rack/session/abstract/id.rb:259:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+rack (2.2.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.1) lib/rack/etag.rb:27:in `call'
+rack (2.2.1) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.1) lib/rack/head.rb:12:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (191.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (111.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3972853870825705845)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateArticles (20200210110224)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (105.4ms)[0m  [1m[35mCREATE TABLE "articles" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200210110224"]]
+  [1m[35m (51.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-02-10 11:02:50.200241"], ["updated_at", "2020-02-10 11:02:50.200241"]]
+  [1m[35m (16.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(3972853870825705845)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/admin/articles" for ::1 at 2020-02-10 03:03:00 -0800
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (41.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (4.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.9ms)
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (41.6ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (2.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (137.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (303.3ms)
+Completed 500 Internal Server Error in 1112ms (ActiveRecord: 2.0ms)
+
+
+  
+LoadError (cannot load such file -- sassc):
+  
+activesupport (5.1.7) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.7) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.7) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.7) lib/active_support/dependencies.rb:292:in `require'
+sprockets (4.0.0) lib/sprockets/autoload/sassc.rb:2:in `<top (required)>'
+activesupport (5.1.7) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.7) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.7) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.7) lib/active_support/dependencies.rb:292:in `require'
+sprockets (4.0.0) lib/sprockets/sassc_processor.rb:42:in `initialize'
+sprockets (4.0.0) lib/sprockets/sassc_processor.rb:27:in `new'
+sprockets (4.0.0) lib/sprockets/sassc_processor.rb:27:in `instance'
+sprockets (4.0.0) lib/sprockets/sassc_processor.rb:31:in `call'
+sprockets (4.0.0) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.0.0) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.0.0) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.0.0) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.0.0) lib/sprockets/processor_utils.rb:22:in `block in <class:CompositeProcessor>'
+sprockets (4.0.0) lib/sprockets/processor_utils.rb:33:in `call'
+sprockets (4.0.0) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.0.0) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.0.0) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.0.0) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.0.0) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.0.0) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.0.0) lib/sprockets/loader.rb:335:in `fetch_asset_from_dependency_cache'
+sprockets (4.0.0) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.0.0) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.0.0) lib/sprockets/bundle.rb:41:in `block in call'
+sprockets (4.0.0) lib/sprockets/utils.rb:167:in `dfs'
+sprockets (4.0.0) lib/sprockets/bundle.rb:42:in `call'
+sprockets (4.0.0) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.0.0) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.0.0) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.0.0) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.0.0) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.0.0) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.0.0) lib/sprockets/loader.rb:335:in `fetch_asset_from_dependency_cache'
+sprockets (4.0.0) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.0.0) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.0.0) lib/sprockets/base.rb:81:in `find_asset'
+sprockets (4.0.0) lib/sprockets/base.rb:88:in `find_all_linked_assets'
+sprockets (4.0.0) lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+concurrent-ruby (1.1.5) lib/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+concurrent-ruby (1.1.5) lib/concurrent/synchronization/mutex_lockable_object.rb:41:in `block in synchronize'
+concurrent-ruby (1.1.5) lib/concurrent/synchronization/mutex_lockable_object.rb:41:in `synchronize'
+concurrent-ruby (1.1.5) lib/concurrent/synchronization/mutex_lockable_object.rb:41:in `synchronize'
+concurrent-ruby (1.1.5) lib/concurrent/executor/safe_task_executor.rb:19:in `execute'
+concurrent-ruby (1.1.5) lib/concurrent/promise.rb:563:in `block in realize'
+concurrent-ruby (1.1.5) lib/concurrent/executor/ruby_thread_pool_executor.rb:348:in `run_task'
+concurrent-ruby (1.1.5) lib/concurrent/executor/ruby_thread_pool_executor.rb:337:in `block (3 levels) in create_worker'
+concurrent-ruby (1.1.5) lib/concurrent/executor/ruby_thread_pool_executor.rb:320:in `loop'
+concurrent-ruby (1.1.5) lib/concurrent/executor/ruby_thread_pool_executor.rb:320:in `block (2 levels) in create_worker'
+concurrent-ruby (1.1.5) lib/concurrent/executor/ruby_thread_pool_executor.rb:319:in `catch'
+concurrent-ruby (1.1.5) lib/concurrent/executor/ruby_thread_pool_executor.rb:319:in `block in create_worker'
+Started GET "/admin/articles" for ::1 at 2020-02-10 03:03:47 -0800
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (5.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (3.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (9.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.6ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (26.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (63.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (3.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 502ms (Views: 493.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/trestle/admin-8b1cfbae0da82802ac548406b4e785695a76751196ef046c3fe3eb086f8d4e87.css" for ::1 at 2020-02-10 03:03:48 -0800
+Started GET "/assets/trestle/admin-6cd52578ab6027fd556840f76325c8e9b04e456cc1bbc67cd63f33d86f6a1e54.js" for ::1 at 2020-02-10 03:03:48 -0800
+Started GET "/assets/trestle/theme-3a4ad3e67e972a1c6fcfcfdeb8991c2960b3b92d536625fbe1faafb92af684ce.css" for ::1 at 2020-02-10 03:03:48 -0800
+Started GET "/assets/trestle/custom-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for ::1 at 2020-02-10 03:03:48 -0800
+Started GET "/assets/trestle/fa-solid-900-3d1080625d3030e88357b3ac9aa377dcec23f1b529c4ad03f7a9a435ccae04be.woff2" for ::1 at 2020-02-10 03:03:48 -0800
+Started GET "/admin/articles" for ::1 at 2020-02-10 03:06:33 -0800
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (5.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (3.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (8.0ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (24.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (79.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (3.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 402ms (Views: 397.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/articles/new" for ::1 at 2020-02-10 03:08:45 -0800
+Processing by ArticlesAdmin::AdminController#new as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (1.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/_form.html.erb (30.0ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin (84.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 123ms (Views: 99.9ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/admin/articles" for ::1 at 2020-02-10 03:08:57 -0800
+Processing by ArticlesAdmin::AdminController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hAgtjsZKaIpeIRhQoz6rCSN5BILvS5xK8Rauuvh+LXADLZ9FMtDCE7VzqeHx5k0JKsc/rempT+Gb6yCPxxbU8A==", "article"=>{"name"=>"Test", "created_at"=>"2020-02-21 12:00", "updated_at"=>"2020-02-25 12:00"}, "button"=>""}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArticle Create (16.3ms)[0m  [1m[32mINSERT INTO "articles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Test"], ["created_at", "2020-02-21 12:00:00"], ["updated_at", "2020-02-25 12:00:00"]]
+  [1m[35m (55.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/articles/1
+Completed 302 Found in 130ms (ActiveRecord: 71.5ms)
+
+
+Started GET "/admin/articles/1" for ::1 at 2020-02-10 03:08:57 -0800
+Processing by ArticlesAdmin::AdminController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/show.html.erb
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (2.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_alert.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (1.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/_form.html.erb (19.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/show.html.erb (22.4ms)
+Completed 200 OK in 46ms (Views: 23.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/trestle/fa-regular-400-0fc0a22e5e67c95d02c389a1454acc67df53e2f6a46af739f3eac7e352644751.woff2" for ::1 at 2020-02-10 03:08:57 -0800
+Started GET "/admin/articles" for ::1 at 2020-02-10 03:09:00 -0800
+Processing by ArticlesAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (3.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.6ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (6.6ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (21.6ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (24.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 39.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/articles" for ::1 at 2020-02-10 03:09:11 -0800
+Processing by ArticlesAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (2.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (5.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (16.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (19.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (1.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3972853870825705845)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200210111353)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (135.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200210111353"]]
+  [1m[35m (51.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(3972853870825705845)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/admin/articles" for ::1 at 2020-02-10 03:14:40 -0800
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (11.0ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (3.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (1.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (1.3ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (23.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (53.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (86.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (3.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 154ms (Views: 146.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/admin/users" for ::1 at 2020-02-10 03:14:42 -0800
+Processing by UsersAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (15.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (17.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (21.5ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"new", :controller=>"users_admin/admin"}):
+    15: 
+    16:   <div class="content-header-toolbars">
+    17:     <div class="btn-toolbar primary-toolbar" role="toolbar">
+    18:       <%= render_toolbar(toolbar(:primary)) %>
+    19:       <%= deprecated_toolbar(:primary) %>
+    20:     </div>
+    21: 
+  
+actionpack (5.2.4.1) lib/action_dispatch/journey/formatter.rb:57:in `generate'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:744:in `generate'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:775:in `generate'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:822:in `url_for'
+trestle (0.9.2) lib/trestle/admin.rb:127:in `path'
+trestle (0.9.2) lib/trestle/admin.rb:17:in `method_missing'
+trestle (0.9.2) app/helpers/trestle/url_helper.rb:44:in `admin_link_to'
+trestle (0.9.2) lib/trestle/toolbar/item.rb:6:in `admin_link_to'
+trestle (0.9.2) lib/trestle/toolbar/item.rb:93:in `render'
+trestle (0.9.2) lib/trestle/toolbar/item.rb:29:in `to_s'
+activesupport (5.2.4.1) lib/active_support/core_ext/string/output_safety.rb:35:in `unwrapped_html_escape'
+actionview (5.2.4.1) lib/action_view/helpers/output_safety_helper.rb:36:in `block in safe_join'
+actionview (5.2.4.1) lib/action_view/helpers/output_safety_helper.rb:36:in `map!'
+actionview (5.2.4.1) lib/action_view/helpers/output_safety_helper.rb:36:in `safe_join'
+trestle (0.9.2) app/helpers/trestle/toolbars_helper.rb:14:in `render_toolbar'
+trestle (0.9.2) app/views/trestle/application/_header.html.erb:18:in `__home_travis__rvm_gems_ruby_______gems_trestle_______app_views_trestle_application__header_html_erb___613285355865415600_69985955447740'
+actionview (5.2.4.1) lib/action_view/template.rb:159:in `block in render'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:170:in `instrument'
+actionview (5.2.4.1) lib/action_view/template.rb:354:in `instrument_render_template'
+actionview (5.2.4.1) lib/action_view/template.rb:157:in `render'
+actionview (5.2.4.1) lib/action_view/renderer/partial_renderer.rb:344:in `block in render_partial'
+actionview (5.2.4.1) lib/action_view/renderer/abstract_renderer.rb:44:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+actionview (5.2.4.1) lib/action_view/renderer/abstract_renderer.rb:43:in `instrument'
+actionview (5.2.4.1) lib/action_view/renderer/partial_renderer.rb:333:in `render_partial'
+actionview (5.2.4.1) lib/action_view/renderer/partial_renderer.rb:312:in `render'
+actionview (5.2.4.1) lib/action_view/renderer/renderer.rb:49:in `render_partial'
+actionview (5.2.4.1) lib/action_view/helpers/rendering_helper.rb:36:in `render'
+trestle (0.9.2) app/views/trestle/application/_layout.html.erb:1:in `__home_travis__rvm_gems_ruby_______gems_trestle_______app_views_trestle_application__layout_html_erb___3864034709563451612_69985955398140'
+actionview (5.2.4.1) lib/action_view/template.rb:159:in `block in render'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:170:in `instrument'
+actionview (5.2.4.1) lib/action_view/template.rb:354:in `instrument_render_template'
+actionview (5.2.4.1) lib/action_view/template.rb:157:in `render'
+actionview (5.2.4.1) lib/action_view/renderer/partial_renderer.rb:344:in `block in render_partial'
+actionview (5.2.4.1) lib/action_view/renderer/abstract_renderer.rb:44:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+actionview (5.2.4.1) lib/action_view/renderer/abstract_renderer.rb:43:in `instrument'
+actionview (5.2.4.1) lib/action_view/renderer/partial_renderer.rb:333:in `render_partial'
+actionview (5.2.4.1) lib/action_view/renderer/partial_renderer.rb:312:in `render'
+actionview (5.2.4.1) lib/action_view/renderer/renderer.rb:49:in `render_partial'
+actionview (5.2.4.1) lib/action_view/helpers/rendering_helper.rb:31:in `render'
+trestle (0.9.2) app/views/trestle/resource/index.html.erb:11:in `__home_travis__rvm_gems_ruby_______gems_trestle_______app_views_trestle_resource_index_html_erb___3204415254402770067_69985955291700'
+actionview (5.2.4.1) lib/action_view/template.rb:159:in `block in render'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:170:in `instrument'
+actionview (5.2.4.1) lib/action_view/template.rb:354:in `instrument_render_template'
+actionview (5.2.4.1) lib/action_view/template.rb:157:in `render'
+actionview (5.2.4.1) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+actionview (5.2.4.1) lib/action_view/renderer/abstract_renderer.rb:44:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+actionview (5.2.4.1) lib/action_view/renderer/abstract_renderer.rb:43:in `instrument'
+actionview (5.2.4.1) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+actionview (5.2.4.1) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+actionview (5.2.4.1) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+actionview (5.2.4.1) lib/action_view/renderer/template_renderer.rb:16:in `render'
+actionview (5.2.4.1) lib/action_view/renderer/renderer.rb:44:in `render_template'
+actionview (5.2.4.1) lib/action_view/renderer/renderer.rb:25:in `render'
+actionview (5.2.4.1) lib/action_view/rendering.rb:103:in `_render_template'
+actionpack (5.2.4.1) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+actionview (5.2.4.1) lib/action_view/rendering.rb:84:in `render_to_body'
+actionpack (5.2.4.1) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+actionpack (5.2.4.1) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+actionpack (5.2.4.1) lib/abstract_controller/rendering.rb:25:in `render'
+actionpack (5.2.4.1) lib/action_controller/metal/rendering.rb:36:in `render'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:46:in `block (2 levels) in render'
+activesupport (5.2.4.1) lib/active_support/core_ext/benchmark.rb:14:in `block in ms'
+/home/travis/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/benchmark.rb:308:in `realtime'
+activesupport (5.2.4.1) lib/active_support/core_ext/benchmark.rb:14:in `ms'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:46:in `block in render'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+activerecord (5.2.4.1) lib/active_record/railties/controller_runtime.rb:31:in `cleanup_view_runtime'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:45:in `render'
+actionpack (5.2.4.1) lib/action_controller/metal/implicit_render.rb:35:in `default_render'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+railties (5.2.4.1) lib/rails/railtie.rb:190:in `public_send'
+railties (5.2.4.1) lib/rails/railtie.rb:190:in `method_missing'
+actionpack (5.2.4.1) lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+actionpack (5.2.4.1) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.1) lib/rack/session/abstract/id.rb:265:in `context'
+rack (2.2.1) lib/rack/session/abstract/id.rb:259:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+rack (2.2.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.1) lib/rack/etag.rb:27:in `call'
+rack (2.2.1) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.1) lib/rack/head.rb:12:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admin/users" for ::1 at 2020-02-10 03:16:29 -0800
+Processing by UsersAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (2.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (7.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.6ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (18.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (20.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 39ms (Views: 34.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/articles" for ::1 at 2020-02-10 03:16:31 -0800
+Processing by ArticlesAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (2.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (11.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (22.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (24.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 36.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/admin/users" for ::1 at 2020-02-10 03:16:32 -0800
+Processing by UsersAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (3.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (5.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (16.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (19.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 43ms (Views: 41.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/users/new" for ::1 at 2020-02-10 03:16:33 -0800
+Processing by UsersAdmin::AdminController#new as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (1.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/_form.html.erb (15.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin (29.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 44.6ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/admin/users" for ::1 at 2020-02-10 03:17:02 -0800
+Processing by UsersAdmin::AdminController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rKCkT2eKqcJsTRPr+aWoj9Gs3z9KFrpU7HUnDxXER5krhRaEkxADW4cfolqrfU6P2BLkEEz0af+GiKk6Kqy+GQ==", "user"=>{"name"=>"Travis", "email"=>"travis@gritter.com", "password_digest"=>"[FILTERED]", "created_at"=>"2020-02-10 12:00", "updated_at"=>"2020-02-10 12:00"}, "button"=>""}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Travis"], ["email", "travis@gritter.com"], ["password_digest", "123123123"], ["created_at", "2020-02-10 12:00:00"], ["updated_at", "2020-02-10 12:00:00"]]
+  [1m[35m (38.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/users/1
+Completed 302 Found in 44ms (ActiveRecord: 39.2ms)
+
+
+Started GET "/admin/users/1" for ::1 at 2020-02-10 03:17:02 -0800
+Processing by UsersAdmin::AdminController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/show.html.erb
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (2.0ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_alert.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (1.6ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/_form.html.erb (12.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/show.html.erb (16.4ms)
+Completed 200 OK in 21ms (Views: 17.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/users" for ::1 at 2020-02-10 03:17:03 -0800
+Processing by UsersAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (2.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (8.6ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (20.0ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (23.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/articles" for ::1 at 2020-02-10 03:17:10 -0800
+Processing by ArticlesAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (3.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.5ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (5.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (18.0ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (20.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/users" for ::1 at 2020-02-10 03:17:11 -0800
+Processing by UsersAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (2.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (7.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (18.0ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (20.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 37ms (Views: 35.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/users" for ::1 at 2020-02-10 03:18:45 -0800
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (11.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (4.0ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.6ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (1.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (30.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (59.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (95.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 172ms (Views: 153.7ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/admin/articles" for ::1 at 2020-02-10 03:18:51 -0800
+Processing by ArticlesAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (2.6ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (12.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (23.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (25.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 45ms (Views: 37.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/admin/articles/new" for ::1 at 2020-02-10 03:19:03 -0800
+Processing by ArticlesAdmin::AdminController#new as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (1.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/_form.html.erb (14.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin (28.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3972853870825705845)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3972853870825705845)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3972853870825705845)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUserIdToArticles (20200210112132)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.4ms)[0m  [1m[35mALTER TABLE "articles" ADD "user_id" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200210112132"]]
+  [1m[35m (30.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(3972853870825705845)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/admin/articles/new" for ::1 at 2020-02-10 03:21:50 -0800
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesAdmin::AdminController#new as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (3.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (4.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/_form.html.erb (55.6ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin (84.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (3.0ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 171ms (Views: 146.6ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-10 15:29:49 -0800
+  [1m[35m (10.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb (2.5ms)
+Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2020-02-10 15:29:49 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admin" for 127.0.0.1 at 2020-02-10 15:29:56 -0800
+Processing by Trestle::DashboardController#index as HTML
+Redirected to http://localhost:3000/admin/articles
+Completed 302 Found in 17ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/articles" for 127.0.0.1 at 2020-02-10 15:29:56 -0800
+Processing by ArticlesAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (25.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  [1m[36mArticle Load (47.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (118.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (2.0ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (180.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (463.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 1135ms (Views: 882.9ms | ActiveRecord: 72.5ms)
+
+
+Started GET "/assets/trestle/admin-8b1cfbae0da82802ac548406b4e785695a76751196ef046c3fe3eb086f8d4e87.css" for 127.0.0.1 at 2020-02-10 15:29:57 -0800
+Started GET "/assets/trestle/theme-3a4ad3e67e972a1c6fcfcfdeb8991c2960b3b92d536625fbe1faafb92af684ce.css" for 127.0.0.1 at 2020-02-10 15:29:57 -0800
+Started GET "/assets/trestle/custom-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 127.0.0.1 at 2020-02-10 15:29:57 -0800
+Started GET "/assets/trestle/admin-6cd52578ab6027fd556840f76325c8e9b04e456cc1bbc67cd63f33d86f6a1e54.js" for 127.0.0.1 at 2020-02-10 15:29:57 -0800
+Started GET "/assets/trestle/fa-solid-900-3d1080625d3030e88357b3ac9aa377dcec23f1b529c4ad03f7a9a435ccae04be.woff2" for 127.0.0.1 at 2020-02-10 15:29:57 -0800
+Started GET "/favicon.ico" for 127.0.0.1 at 2020-02-10 15:29:57 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3972853870825705845)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTodos (20200210233915)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (284.0ms)[0m  [1m[35mCREATE TABLE "todos" ("id" bigserial primary key, "description" text, "finished" boolean, "weight" integer, "category" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200210233915"]]
+  [1m[35m (18.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddUserIdToTodos (20200210234223)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "todos" ADD "user_id" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200210234223"]]
+  [1m[35m (18.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (31.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3972853870825705845)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-02-10 15:45:34 -0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-02-10 15:45:34 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admin" for ::1 at 2020-02-10 15:45:41 -0800
+Processing by Trestle::DashboardController#index as HTML
+Redirected to http://localhost:3000/admin/articles
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/articles" for ::1 at 2020-02-10 15:45:41 -0800
+Processing by ArticlesAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (6.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.5ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (22.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (38.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (64.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 134ms (Views: 123.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/admin/todos" for ::1 at 2020-02-10 15:45:45 -0800
+Processing by TodosAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (23.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (25.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (27.6ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"new", :controller=>"todos_admin/admin"}):
+    15: 
+    16:   <div class="content-header-toolbars">
+    17:     <div class="btn-toolbar primary-toolbar" role="toolbar">
+    18:       <%= render_toolbar(toolbar(:primary)) %>
+    19:       <%= deprecated_toolbar(:primary) %>
+    20:     </div>
+    21: 
+  
+actionpack (5.2.4.1) lib/action_dispatch/journey/formatter.rb:57:in `generate'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:744:in `generate'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:775:in `generate'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:822:in `url_for'
+trestle (0.9.2) lib/trestle/admin.rb:127:in `path'
+trestle (0.9.2) lib/trestle/admin.rb:17:in `method_missing'
+trestle (0.9.2) app/helpers/trestle/url_helper.rb:44:in `admin_link_to'
+trestle (0.9.2) lib/trestle/toolbar/item.rb:6:in `admin_link_to'
+trestle (0.9.2) lib/trestle/toolbar/item.rb:93:in `render'
+trestle (0.9.2) lib/trestle/toolbar/item.rb:29:in `to_s'
+activesupport (5.2.4.1) lib/active_support/core_ext/string/output_safety.rb:35:in `unwrapped_html_escape'
+actionview (5.2.4.1) lib/action_view/helpers/output_safety_helper.rb:36:in `block in safe_join'
+actionview (5.2.4.1) lib/action_view/helpers/output_safety_helper.rb:36:in `map!'
+actionview (5.2.4.1) lib/action_view/helpers/output_safety_helper.rb:36:in `safe_join'
+trestle (0.9.2) app/helpers/trestle/toolbars_helper.rb:14:in `render_toolbar'
+trestle (0.9.2) app/views/trestle/application/_header.html.erb:18:in `__home_travis__rvm_gems_ruby_______gems_trestle_______app_views_trestle_application__header_html_erb__2852264760702902711_70286435397740'
+actionview (5.2.4.1) lib/action_view/template.rb:159:in `block in render'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:170:in `instrument'
+actionview (5.2.4.1) lib/action_view/template.rb:354:in `instrument_render_template'
+actionview (5.2.4.1) lib/action_view/template.rb:157:in `render'
+actionview (5.2.4.1) lib/action_view/renderer/partial_renderer.rb:344:in `block in render_partial'
+actionview (5.2.4.1) lib/action_view/renderer/abstract_renderer.rb:44:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+actionview (5.2.4.1) lib/action_view/renderer/abstract_renderer.rb:43:in `instrument'
+actionview (5.2.4.1) lib/action_view/renderer/partial_renderer.rb:333:in `render_partial'
+actionview (5.2.4.1) lib/action_view/renderer/partial_renderer.rb:312:in `render'
+actionview (5.2.4.1) lib/action_view/renderer/renderer.rb:49:in `render_partial'
+actionview (5.2.4.1) lib/action_view/helpers/rendering_helper.rb:36:in `render'
+trestle (0.9.2) app/views/trestle/application/_layout.html.erb:1:in `__home_travis__rvm_gems_ruby_______gems_trestle_______app_views_trestle_application__layout_html_erb___2489843414839692352_70286435348140'
+actionview (5.2.4.1) lib/action_view/template.rb:159:in `block in render'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:170:in `instrument'
+actionview (5.2.4.1) lib/action_view/template.rb:354:in `instrument_render_template'
+actionview (5.2.4.1) lib/action_view/template.rb:157:in `render'
+actionview (5.2.4.1) lib/action_view/renderer/partial_renderer.rb:344:in `block in render_partial'
+actionview (5.2.4.1) lib/action_view/renderer/abstract_renderer.rb:44:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+actionview (5.2.4.1) lib/action_view/renderer/abstract_renderer.rb:43:in `instrument'
+actionview (5.2.4.1) lib/action_view/renderer/partial_renderer.rb:333:in `render_partial'
+actionview (5.2.4.1) lib/action_view/renderer/partial_renderer.rb:312:in `render'
+actionview (5.2.4.1) lib/action_view/renderer/renderer.rb:49:in `render_partial'
+actionview (5.2.4.1) lib/action_view/helpers/rendering_helper.rb:31:in `render'
+trestle (0.9.2) app/views/trestle/resource/index.html.erb:11:in `__home_travis__rvm_gems_ruby_______gems_trestle_______app_views_trestle_resource_index_html_erb__2714715396621949539_70286435249900'
+actionview (5.2.4.1) lib/action_view/template.rb:159:in `block in render'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:170:in `instrument'
+actionview (5.2.4.1) lib/action_view/template.rb:354:in `instrument_render_template'
+actionview (5.2.4.1) lib/action_view/template.rb:157:in `render'
+actionview (5.2.4.1) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+actionview (5.2.4.1) lib/action_view/renderer/abstract_renderer.rb:44:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+actionview (5.2.4.1) lib/action_view/renderer/abstract_renderer.rb:43:in `instrument'
+actionview (5.2.4.1) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+actionview (5.2.4.1) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+actionview (5.2.4.1) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+actionview (5.2.4.1) lib/action_view/renderer/template_renderer.rb:16:in `render'
+actionview (5.2.4.1) lib/action_view/renderer/renderer.rb:44:in `render_template'
+actionview (5.2.4.1) lib/action_view/renderer/renderer.rb:25:in `render'
+actionview (5.2.4.1) lib/action_view/rendering.rb:103:in `_render_template'
+actionpack (5.2.4.1) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+actionview (5.2.4.1) lib/action_view/rendering.rb:84:in `render_to_body'
+actionpack (5.2.4.1) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+actionpack (5.2.4.1) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+actionpack (5.2.4.1) lib/abstract_controller/rendering.rb:25:in `render'
+actionpack (5.2.4.1) lib/action_controller/metal/rendering.rb:36:in `render'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:46:in `block (2 levels) in render'
+activesupport (5.2.4.1) lib/active_support/core_ext/benchmark.rb:14:in `block in ms'
+/home/travis/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/benchmark.rb:308:in `realtime'
+activesupport (5.2.4.1) lib/active_support/core_ext/benchmark.rb:14:in `ms'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:46:in `block in render'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+activerecord (5.2.4.1) lib/active_record/railties/controller_runtime.rb:31:in `cleanup_view_runtime'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:45:in `render'
+actionpack (5.2.4.1) lib/action_controller/metal/implicit_render.rb:35:in `default_render'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+railties (5.2.4.1) lib/rails/railtie.rb:190:in `public_send'
+railties (5.2.4.1) lib/rails/railtie.rb:190:in `method_missing'
+actionpack (5.2.4.1) lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+actionpack (5.2.4.1) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.1) lib/rack/session/abstract/id.rb:265:in `context'
+rack (2.2.1) lib/rack/session/abstract/id.rb:259:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+rack (2.2.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.1) lib/rack/etag.rb:27:in `call'
+rack (2.2.1) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.1) lib/rack/head.rb:12:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admin/todos" for ::1 at 2020-02-10 15:46:16 -0800
+Processing by TodosAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (2.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (9.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (19.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (22.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 38ms (Views: 34.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/todos/new" for ::1 at 2020-02-10 15:46:18 -0800
+Processing by TodosAdmin::AdminController#new as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (1.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.6ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/_form.html.erb (62.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin (129.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 164ms (Views: 150.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/articles" for ::1 at 2020-02-10 15:46:24 -0800
+Processing by ArticlesAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (2.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (18.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (30.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (32.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 46.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/admin/articles/new" for ::1 at 2020-02-10 15:46:25 -0800
+Processing by ArticlesAdmin::AdminController#new as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin
+  [1m[36mUser Load (16.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (1.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/_form.html.erb (54.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin (57.6ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 80ms (Views: 60.1ms | ActiveRecord: 19.3ms)
+
+
+Started GET "/admin/todos" for ::1 at 2020-02-10 15:46:29 -0800
+Processing by TodosAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (2.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.5ms)
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (6.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (18.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (21.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/todos/new" for ::1 at 2020-02-10 15:46:33 -0800
+Processing by TodosAdmin::AdminController#new as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (1.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/_form.html.erb (12.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin (15.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3972853870825705845)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3972853870825705845)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/admin/todos/new" for ::1 at 2020-02-10 15:47:25 -0800
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TodosAdmin::AdminController#new as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (3.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (3.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/_form.html.erb (28.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin (82.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (3.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 171ms (Views: 157.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/admin/todos/new" for ::1 at 2020-02-10 15:47:26 -0800
+Processing by TodosAdmin::AdminController#new as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (1.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/_form.html.erb (10.6ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin (14.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/todos/new" for ::1 at 2020-02-10 15:47:27 -0800
+Processing by TodosAdmin::AdminController#new as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (1.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.6ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/_form.html.erb (12.0ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin (16.0ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.6ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/todos/new" for ::1 at 2020-02-10 15:47:27 -0800
+Processing by TodosAdmin::AdminController#new as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (1.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/_form.html.erb (12.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin (16.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/todos/new" for ::1 at 2020-02-10 15:47:28 -0800
+Processing by TodosAdmin::AdminController#new as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (1.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/_form.html.erb (14.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin (18.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 35ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/todos/new" for ::1 at 2020-02-10 15:48:06 -0800
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TodosAdmin::AdminController#new as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (3.0ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (3.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/_form.html.erb (20.0ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin (49.0ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (3.6ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 140ms (Views: 126.9ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/admin/users" for ::1 at 2020-02-10 15:48:12 -0800
+Processing by UsersAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (2.6ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (18.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (29.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (32.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 53ms (Views: 44.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/admin/articles" for ::1 at 2020-02-10 15:48:15 -0800
+Processing by ArticlesAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (2.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (17.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (28.0ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (30.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 58ms (Views: 49.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/admin/articles/new" for ::1 at 2020-02-10 15:48:18 -0800
+Processing by ArticlesAdmin::AdminController#new as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (1.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/_form.html.erb (12.6ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin (16.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.6ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/todos" for ::1 at 2020-02-10 15:48:21 -0800
+Processing by TodosAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (2.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (7.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (18.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (21.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 37ms (Views: 35.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/todos" for ::1 at 2020-02-10 15:49:18 -0800
+Processing by TodosAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (2.6ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (8.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (9.6ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (27.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (29.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 48ms (Views: 43.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/todos/new" for ::1 at 2020-02-10 15:49:20 -0800
+Processing by TodosAdmin::AdminController#new as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (1.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.6ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/_form.html.erb (21.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin (25.0ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 49ms (Views: 36.1ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/admin/todos/new" for ::1 at 2020-02-10 15:56:18 -0800
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TodosAdmin::AdminController#new as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (3.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (3.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/_form.html.erb (35.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin (68.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (3.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 143ms (Views: 125.2ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/admin/todos/new" for ::1 at 2020-02-10 15:56:24 -0800
+Processing by TodosAdmin::AdminController#new as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (1.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/_form.html.erb (23.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/new.html.erb within layouts/trestle/admin (27.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/todos" for ::1 at 2020-02-10 15:56:27 -0800
+Processing by TodosController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ApplicationController::AuthorizeApiRequest):
+  
+app/controllers/application_controller.rb:8:in `authenticate_request'
+Started GET "/api/v1/todos" for ::1 at 2020-02-10 15:57:16 -0800
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TodosController#index as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for ::1 at 2020-02-10 15:57:20 -0800
+Processing by Trestle::DashboardController#index as HTML
+Redirected to http://localhost:3000/admin/todos
+Completed 302 Found in 13ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/todos" for ::1 at 2020-02-10 15:57:20 -0800
+Processing by TodosAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (7.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (3.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (16.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (2.0ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (37.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (59.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 122ms (Views: 114.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/v1/todos" for ::1 at 2020-02-10 15:57:28 -0800
+Processing by TodosController#index as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for ::1 at 2020-02-10 15:57:33 -0800
+Processing by Trestle::DashboardController#index as HTML
+Redirected to http://localhost:3000/admin/todos
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/todos" for ::1 at 2020-02-10 15:57:33 -0800
+Processing by TodosAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (2.6ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (7.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (18.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (20.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/users" for ::1 at 2020-02-10 15:57:38 -0800
+Processing by UsersAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (3.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (19.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (31.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (34.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 53ms (Views: 44.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/admin/todos" for ::1 at 2020-02-10 15:57:39 -0800
+Processing by TodosAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (2.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.5ms)
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (6.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (18.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (20.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/todos" for ::1 at 2020-02-10 16:19:34 -0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TodosController#index as */*
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/authenticate" for ::1 at 2020-02-10 16:19:53 -0800
+Processing by AuthenticationController#authenticate as */*
+  Parameters: {"email"=>"example@mail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"example@mail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "example@mail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 12ms (Views: 0.2ms | ActiveRecord: 2.2ms)
+
+
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (20.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "example@mail.com"], ["password_digest", "123123123"], ["created_at", "2020-02-11 00:21:30.767381"], ["updated_at", "2020-02-11 00:21:30.767381"]]
+  [1m[35m (35.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/todos" for ::1 at 2020-02-10 16:22:01 -0800
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TodosController#index as */*
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/authenticate" for ::1 at 2020-02-10 16:22:08 -0800
+Processing by AuthenticationController#authenticate as */*
+  Parameters: {"email"=>"example@mail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"example@mail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "example@mail.com"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 3.7ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for #<User:0x0000556a5c3f9c58>):
+  
+app/commands/authenticate_user.rb:20:in `user'
+app/commands/authenticate_user.rb:11:in `call'
+app/controllers/authentication_controller.rb:5:in `authenticate'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "test@mail.com"], ["password_digest", "$2a$12$5lU.uHLvzVJMTH8Llhxs9Os2QWxzcRJSklWOvX/mMKhBSvsiWxszy"], ["created_at", "2020-02-11 00:25:43.250960"], ["updated_at", "2020-02-11 00:25:43.250960"]]
+  [1m[35m (19.7ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/todos" for ::1 at 2020-02-10 16:26:10 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TodosController#index as */*
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for ::1 at 2020-02-10 16:26:24 -0800
+Processing by Trestle::DashboardController#index as HTML
+Redirected to http://localhost:3000/admin/todos
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/todos" for ::1 at 2020-02-10 16:26:24 -0800
+Processing by TodosAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (25.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (3.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (32.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (110.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (160.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 291ms (Views: 243.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/admin/users" for ::1 at 2020-02-10 16:26:27 -0800
+Processing by UsersAdmin::AdminController#index as HTML
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (2.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.7ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_table.html.erb (29.0ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/table/_pagination.html.erb (1.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_layout.html.erb (40.6ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (43.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 63ms (Views: 53.8ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/admin/users/3" for ::1 at 2020-02-10 16:26:41 -0800
+Processing by UsersAdmin::AdminController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/show.html.erb within layouts/trestle/admin
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_header.html.erb (1.9ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/flash/_flash.html.erb (0.8ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_utilities.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/application/_tabs.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/_form.html.erb (27.3ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/resource/show.html.erb within layouts/trestle/admin (64.5ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_title.html.erb (0.4ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_sidebar.html.erb (2.1ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_header.html.erb (0.2ms)
+  Rendered /home/travis/.rvm/gems/ruby-2.6.3/gems/trestle-0.9.2/app/views/trestle/shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 99ms (Views: 78.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/authenticate" for ::1 at 2020-02-10 16:26:55 -0800
+Processing by AuthenticationController#authenticate as */*
+  Parameters: {"email"=>"test@mail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@mail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@mail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 460ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/todos" for ::1 at 2020-02-10 16:26:56 -0800
+Processing by TodosController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTodo Load (0.7ms)[0m  [1m[34mSELECT "todos".* FROM "todos" ORDER BY created_at ASC[0m
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/todos" for ::1 at 2020-02-10 16:27:41 -0800
+Processing by TodosController#index as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" ORDER BY created_at ASC[0m
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 1.1ms)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (279.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "lifehubnew_development"[0m
+  [1m[35m (327.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "lifehubnew_test"[0m
+  [1m[35m (864.5ms)[0m  [1m[35mCREATE DATABASE "lifehubnew_development" ENCODING = 'unicode'[0m
+  [1m[35m (707.2ms)[0m  [1m[35mCREATE DATABASE "lifehubnew_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "articles" CASCADE[0m
+  [1m[35m (198.5ms)[0m  [1m[35mCREATE TABLE "articles" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "user_id" integer)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "todos" CASCADE[0m
+  [1m[35m (98.7ms)[0m  [1m[35mCREATE TABLE "todos" ("id" bigserial primary key, "description" text, "finished" boolean, "weight" integer, "category" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "user_id" integer)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (78.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (77.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (19.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200210234223)[0m
+  [1m[35m (20.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200210111353),
+(20200210233915),
+(20200210112132);
+
+[0m
+  [1m[35m (78.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-02-11 00:29:00.358144"], ["updated_at", "2020-02-11 00:29:00.358144"]]
+  [1m[35m (19.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "articles" CASCADE[0m
+  [1m[35m (188.5ms)[0m  [1m[35mCREATE TABLE "articles" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "user_id" integer)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "todos" CASCADE[0m
+  [1m[35m (78.4ms)[0m  [1m[35mCREATE TABLE "todos" ("id" bigserial primary key, "description" text, "finished" boolean, "weight" integer, "category" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "user_id" integer)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (79.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (78.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (19.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200210234223)[0m
+  [1m[35m (20.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200210111353),
+(20200210233915),
+(20200210112132);
+
+[0m
+  [1m[35m (112.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-02-11 00:29:00.987145"], ["updated_at", "2020-02-11 00:29:00.987145"]]
+  [1m[35m (15.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2020-02-11 00:29:01.006716"], ["key", "environment"]]
+  [1m[35m (17.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "test@mail.com"], ["password_digest", "$2a$12$xqpt3gThPD29p1PiAiZL/ulfXc9f/XlxRQMnvtPMRyjsAH8.8XwOS"], ["created_at", "2020-02-11 00:29:01.288210"], ["updated_at", "2020-02-11 00:29:01.288210"]]
+  [1m[35m (19.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/todos" for ::1 at 2020-02-10 16:29:26 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TodosController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 404 Not Found in 24ms (ActiveRecord: 3.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=3):
+  
+app/commands/authorize_api_request.rb:17:in `user'
+app/commands/authorize_api_request.rb:9:in `call'
+app/controllers/application_controller.rb:8:in `authenticate_request'
